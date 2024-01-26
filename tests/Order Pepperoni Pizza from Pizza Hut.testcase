@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testCase guid="8963e3dd-f3da-4e48-a74d-b4c177388cbd" id="13" registryId="8963e3dd-f3da-4e48-a74d-b4c177388cbd">
+<testCase guid="8963e3dd-f3da-4e48-a74d-b4c177388cbd" id="18" registryId="8963e3dd-f3da-4e48-a74d-b4c177388cbd">
   <summary/>
   <steps>
     <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiConnect" guid="ed99e08c-7057-4b96-8452-a2447503d7bf" name="UiConnect" testItemId="1" title="UI Connect: PizzaHut">
+      <associations>
+        <association assocationType="TM.TEST_STEP" connectionId="ccca6ccf-3070-4385-b913-2f46889f1108" entityKey="a0rQ1000002FdeJIAS"/>
+      </associations>
       <arguments>
         <argument id="connectionName">
           <value class="value" valueClass="string">PizzaHut</value>
@@ -24,6 +27,9 @@
       </arguments>
     </apiCall>
     <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiWithScreen" guid="703e2c10-f37a-4c0c-8de8-c2c7187cbe77" name="UiWithScreen" testItemId="7" title="On PizzaHut page">
+      <associations>
+        <association assocationType="TM.TEST_STEP" connectionId="ccca6ccf-3070-4385-b913-2f46889f1108" entityKey="a0rQ1000002FdeKIAS"/>
+      </associations>
       <arguments>
         <argument id="uiConnectionName">
           <value class="value" valueClass="string">PizzaHut</value>
@@ -56,6 +62,9 @@
         <clause name="substeps" testItemId="8">
           <steps>
             <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="0632e5f8-2aac-4d98-a672-257ef75d621b" name="UiDoAction" testItemId="17" title="Click the Start Here">
+              <associations>
+                <association assocationType="TM.TEST_STEP" connectionId="ccca6ccf-3070-4385-b913-2f46889f1108" entityKey="a0rQ1000002FdeLIAS"/>
+              </associations>
               <arguments>
                 <argument id="locator">
                   <value class="uiLocator" uri="ui:pageobject:field?field=StartHere&amp;pageId=pageobjects.PizzaHut"/>
@@ -109,6 +118,9 @@
               </generatedParameters>
             </apiCall>
             <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="72e4f37c-0e69-4d78-8a65-2cc3efa0c25a" name="UiDoAction" testItemId="10" title="Click the Delivery">
+              <associations>
+                <association assocationType="TM.TEST_STEP" connectionId="ccca6ccf-3070-4385-b913-2f46889f1108" entityKey="a0rQ1000002FdeMIAS"/>
+              </associations>
               <arguments>
                 <argument id="locator">
                   <value class="uiLocator" uri="ui:pageobject:field?field=delivery&amp;pageId=pageobjects.PizzaHut"/>
@@ -162,6 +174,9 @@
               </generatedParameters>
             </apiCall>
             <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="a114909e-23c5-4ce8-b315-c70a2cbf35ae" name="UiDoAction" testItemId="11" title="Set the Street Address to 1365 N. Scottsdale Rd.">
+              <associations>
+                <association assocationType="TM.TEST_STEP" connectionId="ccca6ccf-3070-4385-b913-2f46889f1108" entityKey="a0rQ1000002FdeNIAS"/>
+              </associations>
               <arguments>
                 <argument id="locator">
                   <value class="uiLocator" uri="ui:pageobject:field?field=streetAddress&amp;pageId=pageobjects.PizzaHut"/>
@@ -223,6 +238,9 @@
               </generatedParameters>
             </apiCall>
             <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="7f9a48a6-bdc6-4f33-a66e-27dde3904e40" name="UiDoAction" testItemId="12" title="Set the Apt Suite to Building 3">
+              <associations>
+                <association assocationType="TM.TEST_STEP" connectionId="ccca6ccf-3070-4385-b913-2f46889f1108" entityKey="a0rQ1000002FdeOIAS"/>
+              </associations>
               <arguments>
                 <argument id="locator">
                   <value class="uiLocator" uri="ui:pageobject:field?field=aptSuite&amp;pageId=pageobjects.PizzaHut"/>
@@ -284,6 +302,9 @@
               </generatedParameters>
             </apiCall>
             <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="8742dc1b-6abb-4690-be01-40fca57435e2" name="UiDoAction" testItemId="13" title="Set the City to Scottsdale">
+              <associations>
+                <association assocationType="TM.TEST_STEP" connectionId="ccca6ccf-3070-4385-b913-2f46889f1108" entityKey="a0rQ1000002FdePIAS"/>
+              </associations>
               <arguments>
                 <argument id="locator">
                   <value class="uiLocator" uri="ui:pageobject:field?field=city&amp;pageId=pageobjects.PizzaHut"/>
@@ -345,6 +366,9 @@
               </generatedParameters>
             </apiCall>
             <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="afce6333-301c-4686-87b1-6629b6391f9d" name="UiDoAction" testItemId="14" title="Set the State to AZ">
+              <associations>
+                <association assocationType="TM.TEST_STEP" connectionId="ccca6ccf-3070-4385-b913-2f46889f1108" entityKey="a0rQ1000002FdeQIAS"/>
+              </associations>
               <arguments>
                 <argument id="locator">
                   <value class="uiLocator" uri="ui:pageobject:field?field=state&amp;pageId=pageobjects.PizzaHut"/>
@@ -406,6 +430,9 @@
               </generatedParameters>
             </apiCall>
             <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="af5bcd11-5c61-4521-a43a-ec243a7dd0cc" name="UiDoAction" testItemId="15" title="Set the Z IP to 85257">
+              <associations>
+                <association assocationType="TM.TEST_STEP" connectionId="ccca6ccf-3070-4385-b913-2f46889f1108" entityKey="a0rQ1000002FdeRIAS"/>
+              </associations>
               <arguments>
                 <argument id="locator">
                   <value class="uiLocator" uri="ui:pageobject:field?field=zIP&amp;pageId=pageobjects.PizzaHut"/>
@@ -467,6 +494,9 @@
               </generatedParameters>
             </apiCall>
             <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="e83c54e4-bc6a-4e1f-a490-108a8d98ee8f" isTitleUpdated="true" name="UiDoAction" testItemId="16" title="Click the Continue Button">
+              <associations>
+                <association assocationType="TM.TEST_STEP" connectionId="ccca6ccf-3070-4385-b913-2f46889f1108" entityKey="a0rQ1000002FdeSIAS"/>
+              </associations>
               <arguments>
                 <argument id="locator">
                   <value class="uiLocator" uri="ui:pageobject:field?field=continue_&amp;pageId=pageobjects.PizzaHut"/>
@@ -520,6 +550,9 @@
               </generatedParameters>
             </apiCall>
             <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="5164725c-6801-415b-912c-2be32f68ef92" name="UiDoAction" testItemId="28" title="Click the The Big New Yorker">
+              <associations>
+                <association assocationType="TM.TEST_STEP" connectionId="ccca6ccf-3070-4385-b913-2f46889f1108" entityKey="a0rQ1000002FdeTIAS"/>
+              </associations>
               <arguments>
                 <argument id="locator">
                   <value class="uiLocator" uri="ui:pageobject:field?field=theBigNewYorker&amp;pageId=pageobjects.PizzaHut"/>
@@ -559,6 +592,9 @@
               </generatedParameters>
             </apiCall>
             <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="0fa42cd2-d835-468a-a1b0-688f90d8bf6c" name="UiDoAction" testItemId="26" title="Click the Expand Toppings">
+              <associations>
+                <association assocationType="TM.TEST_STEP" connectionId="ccca6ccf-3070-4385-b913-2f46889f1108" entityKey="a0rQ1000002FdeUIAS"/>
+              </associations>
               <arguments>
                 <argument id="locator">
                   <value class="uiLocator" uri="ui:pageobject:field?field=expandToppings&amp;pageId=pageobjects.PizzaHut"/>
@@ -576,7 +612,7 @@
                   <value class="value" valueClass="string">false</value>
                 </argument>
                 <argument id="beforeWait">
-                  <value class="uiWait" uri="default"/>
+                  <value class="uiWait" uri="ui:wait:timed?seconds=2"/>
                 </argument>
                 <argument id="afterWait">
                   <value class="uiWait" uri="default"/>
@@ -587,17 +623,34 @@
                 <argument id="interactionDescription">
                   <value class="value" valueClass="string">Click the Expand Toppings</value>
                 </argument>
+                <argument id="ieClickMethod">
+                  <value class="value" valueClass="string">Default</value>
+                </argument>
               </arguments>
               <generatedParameters>
-                <apiParam group="value" name="hover" title="Hover before Clicking">
+                <apiParam group="value" name="hover" seq="10000" title="Hover before Clicking">
                   <summary>Whether the mouse should hover over the field before it is clicked.</summary>
                   <type>
                     <booleanType/>
                   </type>
                 </apiParam>
+                <apiParam group="value" name="ieClickMethod" seq="10001" title="IE Click Method">
+                  <summary>How the click should be executed for Internet Explorer.</summary>
+                  <type>
+                    <choiceType>
+                      <constraints>
+                        <valueConstraint name="valuesSource">com.provar.core.model.base.java.EnumChoiceListValuesSource</valueConstraint>
+                        <valueConstraint name="valuesSourceDependencies">com.provar.core.model.ui.api.ClickMethod</valueConstraint>
+                      </constraints>
+                    </choiceType>
+                  </type>
+                </apiParam>
               </generatedParameters>
             </apiCall>
             <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="998a15de-a3e9-4c0f-a219-e65ee702d6b5" name="UiDoAction" testItemId="20" title="Click the Pepperoni">
+              <associations>
+                <association assocationType="TM.TEST_STEP" connectionId="ccca6ccf-3070-4385-b913-2f46889f1108" entityKey="a0rQ1000002FdeVIAS"/>
+              </associations>
               <arguments>
                 <argument id="locator">
                   <value class="uiLocator" uri="ui:pageobject:field?field=pepperoni&amp;pageId=pageobjects.PizzaHut"/>
@@ -651,6 +704,9 @@
               </generatedParameters>
             </apiCall>
             <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="4ad79c7a-8a24-44b6-877b-60c24c0841b7" name="UiDoAction" testItemId="21" title="Click the Add To Order">
+              <associations>
+                <association assocationType="TM.TEST_STEP" connectionId="ccca6ccf-3070-4385-b913-2f46889f1108" entityKey="a0rQ1000002FdeWIAS"/>
+              </associations>
               <arguments>
                 <argument id="locator">
                   <value class="uiLocator" uri="ui:pageobject:field?field=addToOrder&amp;pageId=pageobjects.PizzaHut"/>
@@ -704,6 +760,9 @@
               </generatedParameters>
             </apiCall>
             <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="9effbe33-898e-4898-ae25-77e3c71426a2" name="UiDoAction" testItemId="22" title="Click the Go To Cart">
+              <associations>
+                <association assocationType="TM.TEST_STEP" connectionId="ccca6ccf-3070-4385-b913-2f46889f1108" entityKey="a0rQ1000002FdeXIAS"/>
+              </associations>
               <arguments>
                 <argument id="locator">
                   <value class="uiLocator" uri="ui:pageobject:field?field=goToCart&amp;pageId=pageobjects.PizzaHut"/>
@@ -757,6 +816,9 @@
               </generatedParameters>
             </apiCall>
             <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="9434f36f-91de-403e-83c3-e6ae36dacd49" name="UiDoAction" testItemId="23" title="Click the Go To Checkout">
+              <associations>
+                <association assocationType="TM.TEST_STEP" connectionId="ccca6ccf-3070-4385-b913-2f46889f1108" entityKey="a0rQ1000002FdeYIAS"/>
+              </associations>
               <arguments>
                 <argument id="locator">
                   <value class="uiLocator" uri="ui:pageobject:field?field=goToCheckout&amp;pageId=pageobjects.PizzaHut"/>
@@ -810,6 +872,9 @@
               </generatedParameters>
             </apiCall>
             <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="b806fa3a-e0c2-4aeb-a7c4-27e400d856b9" name="UiDoAction" testItemId="29" title="Set the First Name to Michael">
+              <associations>
+                <association assocationType="TM.TEST_STEP" connectionId="ccca6ccf-3070-4385-b913-2f46889f1108" entityKey="a0rQ1000002FdeZIAS"/>
+              </associations>
               <arguments>
                 <argument id="locator">
                   <value class="uiLocator" uri="ui:pageobject:field?field=firstName&amp;pageId=pageobjects.PizzaHut"/>
@@ -871,6 +936,9 @@
               </generatedParameters>
             </apiCall>
             <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="349fffe1-d07a-4bea-aeda-f3e7681ce621" name="UiDoAction" testItemId="30" title="Set the Last Name to Dailey">
+              <associations>
+                <association assocationType="TM.TEST_STEP" connectionId="ccca6ccf-3070-4385-b913-2f46889f1108" entityKey="a0rQ1000002FdeaIAC"/>
+              </associations>
               <arguments>
                 <argument id="locator">
                   <value class="uiLocator" uri="ui:pageobject:field?field=lastName&amp;pageId=pageobjects.PizzaHut"/>
@@ -932,6 +1000,9 @@
               </generatedParameters>
             </apiCall>
             <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="f3c53e99-e6b5-42f4-b6aa-d914f23f18fe" name="UiDoAction" testItemId="31" title="Set the Email to michael.dailey@provartesting.com">
+              <associations>
+                <association assocationType="TM.TEST_STEP" connectionId="ccca6ccf-3070-4385-b913-2f46889f1108" entityKey="a0rQ1000002FdebIAC"/>
+              </associations>
               <arguments>
                 <argument id="locator">
                   <value class="uiLocator" uri="ui:pageobject:field?field=email&amp;pageId=pageobjects.PizzaHut"/>
@@ -993,6 +1064,9 @@
               </generatedParameters>
             </apiCall>
             <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="65854e17-4948-40b2-9e27-7b2fe4a109ba" name="UiDoAction" testItemId="32" title="Set the Phone Number to 6156922129">
+              <associations>
+                <association assocationType="TM.TEST_STEP" connectionId="ccca6ccf-3070-4385-b913-2f46889f1108" entityKey="a0rQ1000002FdecIAC"/>
+              </associations>
               <arguments>
                 <argument id="locator">
                   <value class="uiLocator" uri="ui:pageobject:field?field=phoneNumber&amp;pageId=pageobjects.PizzaHut"/>
@@ -1054,6 +1128,9 @@
               </generatedParameters>
             </apiCall>
             <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="bbf16262-a2d5-487b-8fa7-331c7862a0cd" name="UiDoAction" testItemId="33" title="Uncheck the Yes Send Me Promotional Emails From Pizza Hut">
+              <associations>
+                <association assocationType="TM.TEST_STEP" connectionId="ccca6ccf-3070-4385-b913-2f46889f1108" entityKey="a0rQ1000002FdedIAC"/>
+              </associations>
               <arguments>
                 <argument id="locator">
                   <value class="uiLocator" uri="ui:pageobject:field?field=yesSendMePromotionalEmailsFromPizzaHut&amp;pageId=pageobjects.PizzaHut"/>
@@ -1104,6 +1181,9 @@
               </generatedParameters>
             </apiCall>
             <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="24ad3347-e8d7-4931-babf-d11061493c2a" name="UiDoAction" testItemId="34" title="Click the Cash Payment">
+              <associations>
+                <association assocationType="TM.TEST_STEP" connectionId="ccca6ccf-3070-4385-b913-2f46889f1108" entityKey="a0rQ1000002FdeeIAC"/>
+              </associations>
               <arguments>
                 <argument id="locator">
                   <value class="uiLocator" uri="ui:pageobject:field?field=cashPayment&amp;pageId=pageobjects.PizzaHut"/>
@@ -1157,6 +1237,9 @@
               </generatedParameters>
             </apiCall>
             <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="74811881-69d3-4b9b-aca0-3dd5faf7fdd1" name="UiDoAction" testItemId="35" title="Click the Place Order">
+              <associations>
+                <association assocationType="TM.TEST_STEP" connectionId="ccca6ccf-3070-4385-b913-2f46889f1108" entityKey="a0rQ1000002FdefIAC"/>
+              </associations>
               <arguments>
                 <argument id="locator">
                   <value class="uiLocator" uri="ui:pageobject:field?field=placeOrder&amp;pageId=pageobjects.PizzaHut"/>
@@ -1221,4 +1304,7 @@
       </generatedParameters>
     </apiCall>
   </steps>
+  <associations>
+    <association assocationType="TM.TEST_CASE" connectionId="ccca6ccf-3070-4385-b913-2f46889f1108" entityKey="a0aQ1000003Jf8zIAC" lastModifiedDateTime="2024-01-26T05:45:58Z" lastUploadedDateTime="2024-01-26T05:36:23Z"/>
+  </associations>
 </testCase>

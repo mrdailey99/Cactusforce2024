@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testPlanInstance guid="0b05dcbf-2d20-436b-879d-41ad09905b8d" testCaseId="b5901a53-6b47-4bac-8696-53f13f9dda00" testCasePath="tests/Order Pepperoni Pizza from Dominos.testcase">
+  <planSettings/>
+  <planFeatures/>
+  <associations>
+    <association assocationType="TM.TEST_SUITE_CASE" connectionId="ccca6ccf-3070-4385-b913-2f46889f1108" entityKey="a0sQ1000001bC3FIAU"/>
+  </associations>
+</testPlanInstance>

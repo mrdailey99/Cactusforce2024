@@ -23,7 +23,9 @@
     </environment>
     <environment guid="9f76e21b-fa8c-49ed-a397-c88be1f2fac6" name="QA">
       <summary>Owner: Geraint Waters, Status: Available</summary>
-      <associations/>
+      <associations>
+        <association assocationType="TM.ENVIRONMENT" connectionId="ccca6ccf-3070-4385-b913-2f46889f1108" entityKey="a09Q1000000vgKPIAY"/>
+      </associations>
     </environment>
     <environment guid="2acd333c-60d6-4dbe-ad53-7754ba977433" name="SIT">
       <summary>Owner: User User, Status: Available</summary>
@@ -31,7 +33,9 @@
     </environment>
     <environment guid="3d8507c4-b23e-49e0-8946-5d4e5dca9a81" name="Dev">
       <summary>Owner: User User, Status: Available</summary>
-      <associations/>
+      <associations>
+        <association assocationType="TM.ENVIRONMENT" connectionId="ccca6ccf-3070-4385-b913-2f46889f1108" entityKey="a09Q1000000ywAnIAI"/>
+      </associations>
     </environment>
   </environments>
   <connectionClasses>
@@ -47,6 +51,16 @@
           <summary/>
           <connectionUrls>
             <connectionUrl url="se:baseUrl=https://www.pizzahut.com"/>
+          </connectionUrls>
+        </connection>
+      </connections>
+    </connectionClass>
+    <connectionClass name="testmanager">
+      <connections>
+        <connection id="ccca6ccf-3070-4385-b913-2f46889f1108" name="PM">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="d50ad1a5-728d-4aea-942b-69c872868917" url="tm:projectName=Cactusforce2024;projectKey=PIZZA;clientId={clientId};clientSecret={clientSecret};callbackUrl={callbackUrl};environment=SANDBOX;accessToken={accessToken};refreshToken={refreshToken};apiLoginUrl=https://efficiency-data-910-dev-ed.scratch.my.salesforce.com;identityServiceUrl=https://test.salesforce.com/id/00DQ1000000gACfMAM/005Q10000010kNFIAY;sendScreenshots=true;reportMetadataCoverage=true;authenticationType=OAUTH_MANAGED;jwtCertType=JKS"/>
           </connectionUrls>
         </connection>
       </connections>
@@ -133,5 +147,7 @@
       </devices>
     </browserProvider>
   </browserProviders>
-  <associations/>
+  <associations>
+    <association assocationType="TM.TEST_PROJECT" connectionId="ccca6ccf-3070-4385-b913-2f46889f1108" entityKey="a0nQ1000000DupBIAS"/>
+  </associations>
 </testProject>
