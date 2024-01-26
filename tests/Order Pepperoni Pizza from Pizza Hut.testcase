@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testCase guid="8963e3dd-f3da-4e48-a74d-b4c177388cbd" id="18" registryId="8963e3dd-f3da-4e48-a74d-b4c177388cbd">
+<testCase guid="8963e3dd-f3da-4e48-a74d-b4c177388cbd" id="36" registryId="8963e3dd-f3da-4e48-a74d-b4c177388cbd">
   <summary/>
   <steps>
     <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiConnect" guid="ed99e08c-7057-4b96-8452-a2447503d7bf" name="UiConnect" testItemId="1" title="UI Connect: PizzaHut">
@@ -61,13 +61,57 @@
       <clauses>
         <clause name="substeps" testItemId="8">
           <steps>
-            <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="0632e5f8-2aac-4d98-a672-257ef75d621b" name="UiDoAction" testItemId="17" title="Click the Start Here">
-              <associations>
-                <association assocationType="TM.TEST_STEP" connectionId="ccca6ccf-3070-4385-b913-2f46889f1108" entityKey="a0rQ1000002FdeLIAS"/>
-              </associations>
+            <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="bd4f7de2-4107-415d-b6db-c65e76b55b59" name="UiDoAction" testItemId="36" title="Click the Start Here">
               <arguments>
                 <argument id="locator">
                   <value class="uiLocator" uri="ui:pageobject:field?field=StartHere&amp;pageId=pageobjects.PizzaHut"/>
+                </argument>
+                <argument id="interaction">
+                  <value class="uiInteraction" uri="ui:interaction?name=action"/>
+                </argument>
+                <argument id="interactionDescription">
+                  <value class="value" valueClass="string">Click the Start Here</value>
+                </argument>
+                <argument id="beforeWait"/>
+                <argument id="afterWait">
+                  <value class="uiWait" uri="ui:wait:timed?seconds=1"/>
+                </argument>
+                <argument id="autoRetry"/>
+                <argument id="captureBefore">
+                  <value class="value" valueClass="string">false</value>
+                </argument>
+                <argument id="captureAfter">
+                  <value class="value" valueClass="string">false</value>
+                </argument>
+                <argument id="ieClickMethod">
+                  <value class="value" valueClass="string">Default</value>
+                </argument>
+                <argument id="hover"/>
+              </arguments>
+              <generatedParameters>
+                <apiParam group="value" name="hover" seq="10000" title="Hover before Clicking">
+                  <summary>Whether the mouse should hover over the field before it is clicked.</summary>
+                  <type>
+                    <booleanType/>
+                  </type>
+                </apiParam>
+                <apiParam group="value" name="ieClickMethod" seq="10001" title="IE Click Method">
+                  <summary>How the click should be executed for Internet Explorer.</summary>
+                  <type>
+                    <choiceType>
+                      <constraints>
+                        <valueConstraint name="valuesSource">com.provar.core.model.base.java.EnumChoiceListValuesSource</valueConstraint>
+                        <valueConstraint name="valuesSourceDependencies">com.provar.core.model.ui.api.ClickMethod</valueConstraint>
+                      </constraints>
+                    </choiceType>
+                  </type>
+                </apiParam>
+              </generatedParameters>
+            </apiCall>
+            <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="5a0b60b2-9fd5-4eb7-a07c-a01a2f3d9a1c" name="UiDoAction" testItemId="37" title="Click the Delivery Button">
+              <arguments>
+                <argument id="locator">
+                  <value class="uiLocator" uri="ui:pageobject:field?field=deliveryButton&amp;pageId=pageobjects.PizzaHut"/>
                 </argument>
                 <argument id="interaction">
                   <value class="uiInteraction" uri="ui:interaction?name=action"/>
@@ -91,7 +135,7 @@
                   <value class="uiWait" uri="ui:wait:autoRetry:timeout=10"/>
                 </argument>
                 <argument id="interactionDescription">
-                  <value class="value" valueClass="string">Click the Start Here</value>
+                  <value class="value" valueClass="string">Click the Delivery Button</value>
                 </argument>
                 <argument id="ieClickMethod">
                   <value class="value" valueClass="string">Default</value>
@@ -118,6 +162,9 @@
               </generatedParameters>
             </apiCall>
             <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="72e4f37c-0e69-4d78-8a65-2cc3efa0c25a" name="UiDoAction" testItemId="10" title="Click the Delivery">
+              <tags>
+                <string>disabled</string>
+              </tags>
               <associations>
                 <association assocationType="TM.TEST_STEP" connectionId="ccca6ccf-3070-4385-b913-2f46889f1108" entityKey="a0rQ1000002FdeMIAS"/>
               </associations>
@@ -132,7 +179,7 @@
                   <value class="value" valueClass="string">false</value>
                 </argument>
                 <argument id="beforeWait">
-                  <value class="uiWait" uri="default"/>
+                  <value class="uiWait" uri="ui:wait:timed?seconds=1"/>
                 </argument>
                 <argument id="afterWait">
                   <value class="uiWait" uri="default"/>
@@ -581,12 +628,26 @@
                 <argument id="interactionDescription">
                   <value class="value" valueClass="string">Click the The Big New Yorker</value>
                 </argument>
+                <argument id="ieClickMethod">
+                  <value class="value" valueClass="string">Default</value>
+                </argument>
               </arguments>
               <generatedParameters>
-                <apiParam group="value" name="hover" title="Hover before Clicking">
+                <apiParam group="value" name="hover" seq="10000" title="Hover before Clicking">
                   <summary>Whether the mouse should hover over the field before it is clicked.</summary>
                   <type>
                     <booleanType/>
+                  </type>
+                </apiParam>
+                <apiParam group="value" name="ieClickMethod" seq="10001" title="IE Click Method">
+                  <summary>How the click should be executed for Internet Explorer.</summary>
+                  <type>
+                    <choiceType>
+                      <constraints>
+                        <valueConstraint name="valuesSource">com.provar.core.model.base.java.EnumChoiceListValuesSource</valueConstraint>
+                        <valueConstraint name="valuesSourceDependencies">com.provar.core.model.ui.api.ClickMethod</valueConstraint>
+                      </constraints>
+                    </choiceType>
                   </type>
                 </apiParam>
               </generatedParameters>
@@ -1305,6 +1366,6 @@
     </apiCall>
   </steps>
   <associations>
-    <association assocationType="TM.TEST_CASE" connectionId="ccca6ccf-3070-4385-b913-2f46889f1108" entityKey="a0aQ1000003Jf8zIAC" lastModifiedDateTime="2024-01-26T05:45:58Z" lastUploadedDateTime="2024-01-26T05:36:23Z"/>
+    <association assocationType="TM.TEST_CASE" connectionId="ccca6ccf-3070-4385-b913-2f46889f1108" entityKey="a0aQ1000003Jf8zIAC" lastModifiedDateTime="2024-01-26T06:21:47Z" lastUploadedDateTime="2024-01-26T05:36:23Z"/>
   </associations>
 </testCase>

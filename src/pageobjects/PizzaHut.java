@@ -18,7 +18,7 @@ public class PizzaHut {
 	@FindBy(xpath = "//a[contains(normalize-space(.),'$9.99 Large 1-Topping Pizza')]")
 	public WebElement _99_Deal;
 	@TextType()
-	@FindBy(xpath = "//div[2]/div[2]/div/div/div")
+	@FindBy(xpath = "//button[normalize-space(.)='Delivery']")
 	public WebElement delivery;
 	@TextType()
 	@FindBy(xpath = "//input[@id='w2-address']")
@@ -92,5 +92,8 @@ public class PizzaHut {
 	@ButtonType()
 	@FindBy(xpath = "//button[normalize-space(.)='PLACE ORDER']")
 	public WebElement placeOrder;
+	@TextType()
+	@FindBy(xpath = "//div[2]/div[2]/div/div/div")
+	public WebElement deliveryButton;
 			
 }
